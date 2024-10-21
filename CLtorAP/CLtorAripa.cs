@@ -10,6 +10,8 @@ namespace CLtorAP
     //Aripa pars Studio 
     //Cs lang
     //I've also developed a similar library for the D language. For more information, follow us on Telegram and GitHub.
+    //Name for Cs : CLtorCsAP 
+    //name for D : CLtorDAP
 
     public class CLtorAripa
     {
