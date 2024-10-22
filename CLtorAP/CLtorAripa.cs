@@ -104,8 +104,109 @@ namespace CLtorAP
             return 3.14 * diameter;
         }
 
-        //3D
 
+
+
+
+        //                        //                    3D               //             //
+
+        //Cube مکعب
+
+        //volume حجم 
+        public double volumeOFcube(double Side1 )
+        {
+            return Side1 * Side1 * Side1;
+        }
+        //Area مساحت
+        public double areaOFcube(double Side)
+        {
+            return (Side * Side) * 6;
+        }
+
+        //Rectangular Prism مکعب مستطیل 
+        // volume حجم :
+        public double volumeOFRectangularPrism(double length, double width, double height)
+        {
+            return length * width * height;
+        }
+
+        //area مساحت : 
+        public double areaOFrectangularprism(double length, double width, double height)
+        {
+            double frontAndBackArea = 2 * length * width;
+            double topAndBottomArea = 2 * length * height;
+            double leftAndRightArea = 2 * width * height;
+            return frontAndBackArea + topAndBottomArea + leftAndRightArea;
+        }
+
+
+        //Cylinder استوانه
+        public double areaOfCylinder(double radius, double height)
+        {
+          
+            double lateralSurfaceArea = 2 * pi * radius * height;
+            double baseArea = pi * radius * radius;
+            return lateralSurfaceArea + 2 * baseArea;
+        }
+
+        public double volumeOfCylinder(double radius, double height)
+        {
+           
+            return pi * radius * radius * height;
+        }
+
+
+        //Cone مخروط
+        public double areaOfCone(double radius, double slantHeight)
+        {
+            
+            double lateralSurfaceArea = pi * radius * slantHeight;
+         
+            double baseArea = pi * Pow(radius, 2);
+          
+            return lateralSurfaceArea + baseArea;
+        }
+
+        public double volumeOfCone(double radius, double height)
+        {
+         
+            return (1.0 / 3.0) * pi * Pow(radius, 2) * height;
+        }
+
+
+
+        //Sphere کره
+        public double pi = 3.14;
+        //area مساحت:
+        public double areaOFsphere(double radius)
+        {
+            double surfaceArea = 4 * pi * radius * radius;
+            return surfaceArea;
+        }
+        //volume حجم :
+        public double volumeOFSphere(double radius)
+        {
+            double volume = (4.0 / 3.0) * pi * radius * radius * radius;
+            return volume;
+        }
+
+
+
+
+
+
+
+
+        //Pow
+        public static double Pow(double baseNumber, double exponent)
+        {
+            double result = 1;
+            for (int i = 0; i < exponent; i++)
+            {
+                result *= baseNumber;
+            }
+            return result;
+        }
 
     }
 
