@@ -194,7 +194,7 @@ namespace CLtorAP
 
 
 
-
+        //
 
 
         //Pow
@@ -208,6 +208,49 @@ namespace CLtorAP
             return result;
         }
 
+        //Addition جمع:
+
+        double Addition(double[] numbers)
+        {
+            double result = 0.0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                result += numbers[i];
+            }
+            return result;
+        }
+
+        //Subtraction تفریق
+        double Subtraction(double[] numbers)
+        {
+            if (numbers == null || numbers.Length == 0)
+            {
+                throw new ArgumentException("At least one number is required.");
+            }
+            double result = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                result = result - numbers[i];
+            }
+            return result;
+        }
+
+        //Multiplication ضرب :
+        double Multiplication(double[] numbers)
+        {
+            double result = 1.0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                result *= numbers[i];
+            }
+            return result;
+        }
+
+        //Division تقسیم:
+        double Division(double num1 , double num2)
+        {
+            return num1 / num2;
+        }
     }
 
 }
