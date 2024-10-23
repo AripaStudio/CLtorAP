@@ -18,8 +18,16 @@ namespace CLtorAP
     //the end V1
     //23/10/2024
 
+
+
+
+    
+    
+
     public class CLtorAripa
     {
+        //pi
+        public double pi = 3.14159265358979;
         //2D
 
         //rectangle مستطیل 
@@ -145,9 +153,9 @@ namespace CLtorAP
         //Cylinder استوانه
         public double areaOfCylinder(double radius, double height)
         {
+            double baseArea = pi * radius * radius;
           
             double lateralSurfaceArea = 2 * pi * radius * height;
-            double baseArea = pi * radius * radius;
             return lateralSurfaceArea + 2 * baseArea;
         }
 
@@ -178,7 +186,7 @@ namespace CLtorAP
 
 
         //Sphere کره
-        public double pi = 3.14;
+        
         //area مساحت:
         public double areaOFsphere(double radius)
         {
